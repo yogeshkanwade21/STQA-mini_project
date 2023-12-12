@@ -1,0 +1,9 @@
+.product-image{
+    width: 50%;
+    height: auto;
+}
+
+.product-details{
+    display:flex;
+    margin: 5em;
+}

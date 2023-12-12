@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles/pages/login.css">
+    <title>Amazon Clone - Login</title>
+    <link rel="stylesheet" href="styles/shared/amazon-header.css">
+</head>
+<body>
+    <div class="amazon-header">
+        <div class="amazon-header-left-section">
+          <a id="header-link">
+            <img class="amazon-logo"
+              src="images/amazon-logo-white.png">
+            <img class="amazon-mobile-logo"
+              src="images/amazon-mobile-logo-white.png">
+          </a>
+        </div>
+        <div class="amazon-header-right-section">
+            <a class="orders-link header-link" id="orders-link" href="orders.html">
+              <span class="returns-orders-text">Returns & Orders</span>
+            </a>
+    
+            <a class="cart-link header-link" id="cart-link">
+              <img class="cart-icon" src="images/icons/cart-icon.png">
+              <div class="cart-quantity js-cart-quantity">0</div>
+              <div class="cart-text">Cart</div>
+            </a>
+          </div>
+    </div>
+
+    <div class="container">
+        <h2>Login to Amazon Clone</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <input type="submit" id="login-btn" value="Login">
+        </form>
+    </div>
+
+    <script>
+
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get the input values
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // perform validation and authentication.
+            if (username === 'Yogesh' && password === '8329097855') {
+                // Redirect the user to the Amazon clone or perform other actions.
+                alert('Welcome to Amazon,' + username);
+                window.location.href = 'http://127.0.0.1:5501/amazon.html';
+            } 
+            
+            else if (password === '5555') {
+                alert('Invalid Password. Login Failed.');
+            }
+            else if (username === 'abcd') {
+                alert('Invalid Username. Login Failed.');
+            }
+            else {
+                alert('Invalid credentials. Login Failed.');
+            }
+        });
+
+        document.getElementById('cart-link').addEventListener('click', () => {
+            alert('Login to access Cart');
+        });
+
+        document.getElementById('header-link').addEventListener('click', () => {
+            alert('Login to access Amazon');
+        });
+
+    </script>
+</body>
+</html>

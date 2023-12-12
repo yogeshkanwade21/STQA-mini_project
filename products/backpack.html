@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Product Name - Amazon Clone</title>
+    <link rel="stylesheet" href="../styles/shared/general.css">
+    <link rel="stylesheet" href="../styles/shared/amazon-header.css">
+    <link rel="stylesheet" href="../styles\pages\amazon.css">
+    <link rel="stylesheet" href="../styles/pages/product_details/backpack.css">
+  </head>
+  <body>
+    <div class="amazon-header">
+        <div class="amazon-header-left-section">
+          <a href="../amazon.html" class="header-link">
+            <img class="amazon-logo"
+              src="../images/amazon-logo-white.png">
+            <img class="amazon-mobile-logo"
+              src="../images/amazon-mobile-logo-white.png">
+          </a>
+        </div>
+  
+        <div class="amazon-header-middle-section">
+          <input class="search-bar" type="text" placeholder="Search">
+  
+          <button class="search-button">
+            <img class="search-icon" src="../images/icons/search-icon.png">
+          </button>
+        </div>
+  
+        <div class="amazon-header-right-section">
+          <a class="orders-link header-link" href="../orders.html">
+            <span class="returns-orders-text">Returns & Orders</span>
+          </a>
+  
+          <a class="cart-link header-link" href="../checkout.html">
+            <img class="cart-icon" src="../images/icons/cart-icon.png">
+            <div class="cart-quantity js-cart-quantity">0</div>
+            <div class="cart-text">Cart</div>
+          </a>
+        </div>
+      </div>
+
+    <div class="product-details">
+      <div class="product-images">
+        <img class="product-image" src="../images/products/backpack.jpg" alt="Product Image">
+      </div>
+
+      <div class="product-info">
+        <h1 class="product-title">Backpack</h1>
+        <p class="product-description"> Combination of functional & safety features in stylish design, 
+          Soft mesh back with 8 mm foam padded 2 Main Compartment, 1 Slip In Pocket inside the bag, 
+          Printed Design, Mesh bottle holder on the side</p>
+        <p class="product-price">$15.00</p>
+
+        <div class="product-actions">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="product-details-specs">
+          <h2>Product Specifications</h2>
+          <ul>
+            <li>Water-proof</li>
+            <li>Size: 35 x 13 x 46 cms</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="../scripts/product-details.js"></script>
+  </body>
+</html>
