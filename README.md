@@ -6,7 +6,7 @@ STQA Mini Project Semester 7
 1. [Introduction](#introduction)
 2. [Getting Started](#getting-started)
 3. [References](#references)
-4. [Acknowledgement](acknowledgement)
+4. [Acknowledgement](#acknowledgement)
 
 ## Introduction
 * This is a pretty basic project for delving into automation and testing.
